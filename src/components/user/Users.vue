@@ -350,7 +350,6 @@ export default {
       }).catch(error => error)
 
       // 如果用户确认删除，返回为confirm
-      console.log(confirmResult)
       if (confirmResult !== 'confirm') {
         return this.$message.info('已取消删除')
       }
